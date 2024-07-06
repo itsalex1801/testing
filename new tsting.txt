@@ -1,0 +1,280 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 224 71.4% 4.1%;
+--card: 0 0% 100%;
+--card-foreground: 224 71.4% 4.1%;
+--popover: 0 0% 100%;
+--popover-foreground: 224 71.4% 4.1%;
+--primary: 220.9 39.3% 11%;
+--primary-foreground: 210 20% 98%;
+--secondary: 220 14.3% 95.9%;
+--secondary-foreground: 220.9 39.3% 11%;
+--muted: 220 14.3% 95.9%;
+--muted-foreground: 220 8.9% 46.1%;
+--accent: 220 14.3% 95.9%;
+--accent-foreground: 220.9 39.3% 11%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 210 20% 98%;
+--border: 220 13% 91%;
+--input: 220 13% 91%;
+--ring: 224 71.4% 4.1%;
+--radius: 0.35rem;
+				}
+				.dark {
+					--background: 224 71.4% 4.1%;
+--foreground: 210 20% 98%;
+--card: 224 71.4% 4.1%;
+--card-foreground: 210 20% 98%;
+--popover: 224 71.4% 4.1%;
+--popover-foreground: 210 20% 98%;
+--primary: 210 20% 98%;
+--primary-foreground: 220.9 39.3% 11%;
+--secondary: 215 27.9% 16.9%;
+--secondary-foreground: 210 20% 98%;
+--muted: 215 27.9% 16.9%;
+--muted-foreground: 217.9 10.6% 64.9%;
+--accent: 215 27.9% 16.9%;
+--accent-foreground: 210 20% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 210 20% 98%;
+--border: 215 27.9% 16.9%;
+--input: 215 27.9% 16.9%;
+--ring: 216 12.2% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-[var(--background)] text-[var(--foreground)]">
+  
+  <header class="bg-[var(--primary)] text-[var(--primary-foreground)] p-4 flex justify-between items-center">
+    <div class="text-2xl font-bold">Law Firm</div>
+    <nav class="space-x-4">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Services</a>
+      <a href="#" class="hover:underline">Contact</a>
+    </nav>
+    <div class="space-x-2">
+      <button class="bg-[var(--secondary)] text-[var(--secondary-foreground)] px-4 py-2 rounded">Login</button>
+      <button class="bg-[var(--accent)] text-[var(--accent-foreground)] px-4 py-2 rounded">Sign Up</button>
+    </div>
+  </header>
+  
+  <section class="bg-[var(--foreground)] text-[var(--background)] p-8 text-center">
+    <h1 class="text-4xl font-bold mb-4">Excellence In Defense: Criminal Law Mastery</h1>
+    <p class="mb-4">Leveraging Strong Client Relationships, Integrity, and Expertise</p>
+    <div class="space-x-2">
+      <button class="bg-[var(--primary)] text-[var(--primary-foreground)] px-4 py-2 rounded">Get Started</button>
+      <button class="bg-[var(--secondary)] text-[var(--secondary-foreground)] px-4 py-2 rounded">Learn More</button>
+    </div>
+  </section>
+  
+  <section class="p-8">
+    <h2 class="text-3xl font-bold text-center mb-8">#1 Best Legal Services: Ensuring Excellence And Reliability</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div class="border p-4 rounded text-center">
+        <img src="https://placehold.co/100x100?text=Personal+Injury" alt="Personal Injury" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">Personal Injury</h3>
+        <p>Expert legal support for personal injury cases.</p>
+      </div>
+      <div class="border p-4 rounded text-center">
+        <img src="https://placehold.co/100x100?text=Traffic+DUI" alt="Traffic DUI" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">Traffic / DUI Services</h3>
+        <p>Professional defense for traffic and DUI cases.</p>
+      </div>
+      <div class="border p-4 rounded text-center">
+        <img src="https://placehold.co/100x100?text=Divorce+Family+Law" alt="Divorce Family Law" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">Divorce / Family Law</h3>
+        <p>Comprehensive support for family law matters.</p>
+      </div>
+      <div class="border p-4 rounded text-center">
+        <img src="https://placehold.co/100x100?text=Lemon+Law" alt="Lemon Law" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">Lemon Law</h3>
+        <p>Legal assistance for defective vehicle cases.</p>
+      </div>
+      <div class="border p-4 rounded text-center">
+        <img src="https://placehold.co/100x100?text=Employment+Law" alt="Employment Law" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">Employment Law</h3>
+        <p>Protecting your rights in the workplace.</p>
+      </div>
+      <div class="border p-4 rounded text-center">
+        <img src="https://placehold.co/100x100?text=Motor+Vehicle+Accidents" alt="Motor Vehicle Accidents" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">Motor Vehicle Accidents</h3>
+        <p>Support for motor vehicle accident claims.</p>
+      </div>
+      <div class="border p-4 rounded text-center">
+        <img src="https://placehold.co/100x100?text=Worker+Compensation" alt="Worker Compensation" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">Worker's Compensation</h3>
+        <p>Helping you get the compensation you deserve.</p>
+      </div>
+      <div class="border p-4 rounded text-center">
+        <img src="https://placehold.co/100x100?text=Social+Security+Disability" alt="Social Security Disability" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">Social Security Disability</h3>
+        <p>Assistance with social security disability claims.</p>
+      </div>
+      <div class="border p-4 rounded text-center">
+        <img src="https://placehold.co/100x100?text=Bankruptcy+Services" alt="Bankruptcy Services" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">Bankruptcy Services</h3>
+        <p>Guidance through bankruptcy proceedings.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-[var(--foreground)] text-[var(--background)] p-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">It's Not About Business, It's About YOU!</h2>
+    <p class="mb-4">Dedicated to providing personalized legal services tailored to your unique needs.</p>
+    <ul class="list-disc list-inside">
+      <li>Client-focused approach</li>
+      <li>Expert legal advice</li>
+      <li>Unmatched dedication</li>
+    </ul>
+  </section>
+  
+  <section class="p-8">
+    <h2 class="text-3xl font-bold text-center mb-8">Meet Our Legal Experts</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="text-center">
+        <img src="https://placehold.co/200x200?text=Legal+Expert+1" alt="Legal Expert 1" class="mx-auto mb-4 rounded-full">
+        <h3 class="font-bold mb-2">Legal Expert 1</h3>
+        <p>Specialist in criminal law.</p>
+      </div>
+      <div class="text-center">
+        <img src="https://placehold.co/200x200?text=Legal+Expert+2" alt="Legal Expert 2" class="mx-auto mb-4 rounded-full">
+        <h3 class="font-bold mb-2">Legal Expert 2</h3>
+        <p>Expert in family law.</p>
+      </div>
+      <div class="text-center">
+        <img src="https://placehold.co/200x200?text=Legal+Expert+3" alt="Legal Expert 3" class="mx-auto mb-4 rounded-full">
+        <h3 class="font-bold mb-2">Legal Expert 3</h3>
+        <p>Personal injury specialist.</p>
+      </div>
+      <div class="text-center">
+        <img src="https://placehold.co/200x200?text=Legal+Expert+4" alt="Legal Expert 4" class="mx-auto mb-4 rounded-full">
+        <h3 class="font-bold mb-2">Legal Expert 4</h3>
+        <p>Employment law expert.</p>
+      </div>
+      <div class="text-center">
+        <img src="https://placehold.co/200x200?text=Legal+Expert+5" alt="Legal Expert 5" class="mx-auto mb-4 rounded-full">
+        <h3 class="font-bold mb-2">Legal Expert 5</h3>
+        <p>Specialist in DUI cases.</p>
+      </div>
+      <div class="text-center">
+        <img src="https://placehold.co/200x200?text=Legal+Expert+6" alt="Legal Expert 6" class="mx-auto mb-4 rounded-full">
+        <h3 class="font-bold mb-2">Legal Expert 6</h3>
+        <p>Motor vehicle accident specialist.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-[var(--foreground)] text-[var(--background)] p-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Hear From Our Satisfied Clients</h2>
+    <blockquote class="italic mb-4">"The best legal service I have ever experienced. Highly recommend!"</blockquote>
+    <p>- Satisfied Client</p>
+  </section>
+  
+  <section class="p-8 text-center">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div>
+        <h3 class="text-2xl font-bold">10k+</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">$0.3M</h3>
+        <p>Recovered for Clients</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">17</h3>
+        <p>Years of Experience</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="p-8">
+    <h2 class="text-3xl font-bold text-center mb-8">Latest News</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="border p-4 rounded">
+        <img src="https://placehold.co/300x200?text=News+1" alt="News 1" class="mb-4">
+        <h3 class="font-bold mb-2">News Title 1</h3>
+        <p>Brief description of the news article.</p>
+      </div>
+      <div class="border p-4 rounded">
+        <img src="https://placehold.co/300x200?text=News+2" alt="News 2" class="mb-4">
+        <h3 class="font-bold mb-2">News Title 2</h3>
+        <p>Brief description of the news article.</p>
+      </div>
+      <div class="border p-4 rounded">
+        <img src="https://placehold.co/300x200?text=News+3" alt="News 3" class="mb-4">
+        <h3 class="font-bold mb-2">News Title 3</h3>
+        <p>Brief description of the news article.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-[var(--foreground)] text-[var(--background)] p-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Keep Updated & Don't Miss Anything!</h2>
+    <form class="space-y-4">
+      <input type="email" placeholder="Enter your email" class="w-full p-2 rounded border-[var(--input)]">
+      <button type="submit" class="bg-[var(--primary)] text-[var(--primary-foreground)] px-4 py-2 rounded">Subscribe</button>
+    </form>
+  </section>
+  
+  <footer class="bg-[var(--primary)] text-[var(--primary-foreground)] p-4 text-center">
+    <p>Toll Free: 1-888-908-8107 | Main Line: 1-602-922-3244 | Fax: 1-480-571-2803</p>
+    <p>&copy; 2023 Law Firm. All rights reserved.</p>
+  </footer>
+</div>
+  </body>
+</html>
